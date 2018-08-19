@@ -2,9 +2,7 @@
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client();
 
-bot.registry.registerGroup('simple', 'simple');
-bot.registry.registerDefaults();
-bot.registry.registerCommandsIn(__dirname + '/commands');
+
 
 const INVITE = process.env.INVITE;
 const TOKEN = process.env.TOKEN;
