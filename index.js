@@ -1,7 +1,5 @@
-
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client();
-
 
 
 const INVITE = process.env.INVITE;
@@ -20,9 +18,6 @@ bot.on('message', function(message){
         message.member.addRole(invited);
     }
 });
-
-
-
 
 
 bot.login(TOKEN);
